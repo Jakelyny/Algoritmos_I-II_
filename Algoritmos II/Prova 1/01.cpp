@@ -1,6 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+/*Uma permutação da sequência 1 . . n é qualquer rearranjo dos termos dessa sequência. Em outras palavras, uma permutação de 1 . . n é qualquer
+sequência p[1 . . n] em que cada elemento de 1 . . n aparece somente uma vez.
+Por exemplo dado o valor 123 as possíveis permutações são:
+123
+132
+213
+231
+312
+321
+Elabore um programa que dado um valor inteiro qualquer, menor que 9999 apresente as permutações possíveis para o valor informado.*/
+
 void Verifica(char numero[]);
 void Permuta(char numero[]);
 
