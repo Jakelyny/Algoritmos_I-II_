@@ -12,8 +12,8 @@ Por exemplo dado o valor 123 as possíveis permutações são:
 321
 Elabore um programa que dado um valor inteiro qualquer, menor que 9999 apresente as permutações possíveis para o valor informado.*/
 
-void Verifica(char numero[]);
-void Permuta(char numero[]);
+void verifica(char numero[]);
+void permuta(char numero[]);
 
 int main(){
 
@@ -23,21 +23,21 @@ int main(){
 
     cout<<" Digite um número para saber sua permutação: ";
     gets(numero);
-    Verifica(numero);
+    verifica(numero);
     getchar();
     return 0;
 }
 
-void Verifica(char numero[]){
+void verifica(char numero[]){
     if(atoi(numero) < 9999){
         cout<<endl;
-        Permuta(numero);
+        permuta(numero);
     }else{
         cout<<"\n\n\t O NÚMERO PRECISA SER MENOR QUE 9999!\n\n";
     }
 }
 
-void Permuta(char numero[]){
+void permuta(char numero[]){
     cout<<"--PERMUTAÇÃO--"<<endl;
     switch(strlen(numero)){
     case 1:
