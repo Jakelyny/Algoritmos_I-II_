@@ -5,6 +5,19 @@
 #include<ctime>
 using namespace std;
 
+/*Crie um programa que manipule através de alocação dinâmica e ponteiros um vetor “V” de X posições de números
+inteiros (a dimensão do vetor é definido pelo usuário do sistema não sendo permitido vetor maior que 100
+posições), o programa deve apresentar um menu com as seguintes opções:
+0 – Sair
+1 – Gerar valores para o vetor (gerar valores randomicamente menores que 100 sem repetição) 2 – Mostrar o vetor
+(exibindo no máximo 10 elementos por linha e separando com virgula) 3 – Localizar valor (usuário informa um
+determinado valor e o sistema procura se este valor pertence ao vetor, caso pertencer exibe a mensagem:
+“Valor X, pertence ao vetor”, caso não existir no vetor o valor informado, ele deverá ser incluído no lugar
+do último elemento do vetor exibindo a mensagem: “Valor X, foi incluído no vetor no lugar do valor Y” (Y é a
+referência ao valor que foi substituído) 4 – Mostrar quantas substituições foram realizadas.
+OBS: as opções 2, 3 e 4 só podem ser executadas se a opção 1 foi acionada. Ao escolher opção inválida
+no menu deverá exibir mensagem, com tal informação. Os vetores só podem ser percorridos usando aritmética de ponteiros.*/
+
 void gerar(int *pv, int *v);
 void mostrar(int *pv, int *v);
 void localizar(int *pv, int *v, int *sub);
