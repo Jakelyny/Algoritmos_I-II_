@@ -2,6 +2,8 @@
 #include <ctime>
 using namespace std;
 
+/* */
+
 void criaVetor(int quant, int *vet);
 
 int main(){
