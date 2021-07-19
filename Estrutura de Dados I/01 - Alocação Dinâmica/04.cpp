@@ -8,12 +8,10 @@ void somaMat(int tam, float *matIn1, float *matIn2, float **matOut);
 void somaMatVers2(int tam, float *matIn1, float *matIn2, float **matOut);
 
 
-int main()
-{
+int main(){
+
     setlocale(LC_ALL, "Portuguese");
-
     srand(time(NULL));
-
     int c, l, tamM;
 
     cout << "Informe o número de linhas: ";
@@ -47,16 +45,14 @@ int main()
     delete[] soma2;
 }
 
-void geraDados(float **mat, int tam)
-{
+void geraDados(float **mat, int tam){
     for(int i=0; i<tam; i++)
     {
         (*mat)[i] = rand()%9;
     }
 }
 
-void imprimerMat(float *mat, int l, int c)
-{
+void imprimerMat(float *mat, int l, int c){
     cout << endl;
     for(int linha=0; linha<l; linha++)
     {
@@ -69,7 +65,6 @@ void imprimerMat(float *mat, int l, int c)
 
     }
 }
-
 
 void somaMat(int tam, float *matIn1, float *matIn2, float **matOut)
 {
