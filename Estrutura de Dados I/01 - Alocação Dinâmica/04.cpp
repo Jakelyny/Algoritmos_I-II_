@@ -82,9 +82,9 @@ void somaMat(int tam, float *matIn1, float *matIn2, float **matOut)
 
 void somaMatVers2(int tam, float *matIn1, float *matIn2, float **matOut)
 {
-    float *ptrMatOut = *matOut; //primeiro elemento
-    float *ptrMatIn1 = matIn1; //primeiro elemento
-    float *ptrMatIn2 = matIn2; //primeiro elemento
+    float *ptrMatOut = *matOut;
+    float *ptrMatIn1 = matIn1;
+    float *ptrMatIn2 = matIn2;
     for(int i=0; i<tam; i++)
     {
         *ptrMatOut = *ptrMatIn1 + *ptrMatIn2;
