@@ -7,18 +7,16 @@ void imprimerMat(float *mat, int l, int c);
 void somaMat(int tam, float *matIn1, float *matIn2, float **matOut);
 void somaMatVers2(int tam, float *matIn1, float *matIn2, float **matOut);
 
-
 int main(){
 
     setlocale(LC_ALL, "Portuguese");
     srand(time(NULL));
     int c, l, tamM;
 
-    cout << "Informe o número de linhas: ";
-    cin >> l;
-
-    cout << "Informe o número de colunas: ";
-    cin >> c;
+    cout<<"Informe o número de linhas: ";
+    cin>>l;
+    cout<<"Informe o número de colunas: ";
+    cin>>c;
 
     tamM = l*c;
 
@@ -46,30 +44,25 @@ int main(){
 }
 
 void geraDados(float **mat, int tam){
-    for(int i=0; i<tam; i++)
-    {
+    for(int i=0; i<tam; i++){
         (*mat)[i] = rand()%9;
     }
 }
 
 void imprimerMat(float *mat, int l, int c){
-    cout << endl;
-    for(int linha=0; linha<l; linha++)
-    {
-        for(int coluna=0; coluna<c; coluna++)
-        {
+    cout<<endl;
+    for(int linha=0; linha<l; linha++){
+        for(int coluna=0; coluna<c; coluna++){
             int indice = linha*c + coluna;
-            cout << mat[indice]  << "\t";
+            cout<<mat[indice]<<"\t";
         }
-        cout << endl;
+        cout<<endl;
 
     }
 }
 
-void somaMat(int tam, float *matIn1, float *matIn2, float **matOut)
-{
-    for(int i=0; i<tam; i++)
-    {
+void somaMat(int tam, float *matIn1, float *matIn2, float **matOut){
+    for(int i=0; i<tam; i++){
         (*matOut)[i] = matIn1[i] + matIn2[i];
     }
 
